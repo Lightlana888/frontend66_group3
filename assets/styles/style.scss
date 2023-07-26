@@ -1,0 +1,31 @@
+@import 'extend_fonts';
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header__logo{
+    width: 68.552px;
+    height: 41.527px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url(../images/DP_logo.svg)
+
+}
+
+.header__navigation{
+    display: flex;
+    gap: 2vw;
+
+}
+.navigation__item {
+    display: flex;
+    cursor: pointer;
+    @extend %header_font;
+}
+
+.navigation__item:hover{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
