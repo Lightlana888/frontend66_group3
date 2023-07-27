@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header__logo{
+    width: 68.552px;
+    height: 41.527px;
+    background-image: url(../images/DP_logo.svg)
+
+}
+
+.header__navigation{
+    display: flex;
+    gap: 2vw;
+
+}
+.navigation__item {
+    display: flex;
+    cursor: pointer;
+    @extend %header_font;
+}
+
+.navigation__item:hover{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
