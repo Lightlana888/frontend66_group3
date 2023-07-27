@@ -3,104 +3,39 @@
 
 
 
-.container {
+.projects-page {
 
     display: grid;
     gap: 20px;
     margin: 29px 135px 60px;
     width: 1170px;
     height: 435px;
-    @extend %container_font;
+    @extend %projects-page_font;
 }
 
-.block {
-
-    background-color: $primary-color;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-}
-
-.image {
-    text-align: left;
-    height: 50vh;
-    object-fit: cover;
-    width: 670px;
-    height: 435px;
-}
-
-.text {
-    width: 500px;
-    height: 435px;
-}
-
-.text__content {
-    width: 400px;
-    height: 120px;
-    margin-top: 73px;
-    margin-left: 30px;
-    @extend %text__content_font;
-}
-
-.text__title {
-    width: 440px;
-    height: 47px;
-    margin-top: 30px;
-    margin-left: 30px;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 300;
-    color: $accent-color;
-    @extend %text__title_font;
-}
-
-.text__arrow-button {
-    padding: 5rem, 5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 12px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 2.4px;
-    width: 222px;
-    height: 71px;
-    background: $buttons-color;
-    margin-top: 64px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    @extend %text__arrow-button_font;
-}
-
-.text__arrow-button::after {
-    content: "\2192";
-    margin-left: 20px;
-}
-
-.page-name {
+.progects-page__page-name {
 
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     width: 278px;
     height: 128px;
-    @extend %page-name_font;
+    @extend %progects-page__page-name_font;
 
 }
 
-.word {
+.progects-page__page-name__word {
     color: $accent-color;
     font-weight: 300;
 
 }
 
-.word+.word {
+.progects-page__page-name__word+.progects-page__page-name__word {
     color: $secondary-color;
     font-weight: 700;
 }
 
-.page-name::after {
+.progects-page__page-name::after {
 
     content: "";
     display: block;
@@ -116,29 +51,96 @@
 
 }
 
-.pagination {
+.projects-page__description-block {
+
+    background-color: $primary-color;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.projects-page__description-block__image {
+    text-align: left;
+    height: 50vh;
+    object-fit: cover;
+    width: 670px;
+    height: 435px;
+}
+
+.projects-page__description-block__text {
+    width: 500px;
+    height: 435px;
+}
+
+.projects-page__description-block__text__title {
+    width: 440px;
+    height: 47px;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    color: $accent-color;
+    @extend %projects-page__description-block__text__title_font;
+}
+
+.projects-page__description-block__text__content {
+    width: 400px;
+    height: 120px;
+    margin-top: 73px;
+    margin-left: 30px;
+    @extend %projects-page__description-block__text__content_font;
+}
+
+
+
+.projects-page__description-block__text__view-more-button {
+    padding: 5rem, 5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2.4px;
+    width: 222px;
+    height: 71px;
+    background: $buttons-color;
+    margin-top: 64px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    @extend %projects-page__description-block__text__view-more-button_font;
+}
+
+.projects-page__description-block__text__view-more-button::after {
+    content: "\2192";
+    margin-left: 20px;
+}
+
+
+
+.projects-page__pagination {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
     margin-top: 75px;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
+    @extend %projects-page__pagination_font;
 }
 
-.current-page {
+.projects-page__pagination__current-page {
     color: $secondary-color;
     margin-right: 1rem;
 
 }
 
-.next-page {
+.projects-page__pagination__next-page {
     color: $accent-color;
 }
 
-.arrow-left,
-.arrow-right {
+.projects-page__pagination__arrow-left,
+.projects-page__pagination__arrow-right {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,8 +152,8 @@
     cursor: pointer;
 }
 
-.arrow-left svg,
-.arrow-right svg {
+.projects-page__pagination__arrow-left svg,
+.projects-page__pagination__arrow-right svg {
     width: 17.2px;
     height: 8px;
 }
