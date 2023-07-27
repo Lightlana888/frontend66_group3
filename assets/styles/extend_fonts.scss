@@ -1,98 +1,139 @@
-%header_font{
-    color:#333;
+%header_font {
+    color: #333;
     font-family: Roboto, sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 12px; /* 100% */
+    line-height: 12px;
+    /* 100% */
     letter-spacing: 2.4px;
     text-transform: uppercase;
     text-decoration: none;
-    }
-
-%footer-title_font{
-color: #FFF;
-font-family: Roboto, sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
 }
 
-%footer_font{
-color: #FFF;
-font-family: Roboto, sans-serif;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
+%footer-title_font {
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-%title-first-line_font{
-color: #BDBDBD;
-font-family: Roboto, sans-serif;
-font-size: 64px;
-font-style: normal;
-font-weight: 300;
-line-height: 64px; /* 100% */
+%footer_font {
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 171.429% */
+    letter-spacing: 0.42px;
 }
 
-%title-second-line_font{
-color:#333;
-font-family: Roboto, sans-serif;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: 64px; /* 100% */
+%title-first-line_font {
+    color: #BDBDBD;
+    font-family: Roboto, sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    /* 100% */
 }
 
-%text_font{
-color: #000;
-font-family: Roboto, sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: 25px; /* 156.25% */
-}
-
-%text-mediun-size_font{
-color:#333;
-font-family: Roboto, sans-serif;
-font-size: 22px;
-font-style: normal;
-font-weight: 400;
-line-height: 36px; /* 163.636% */
-}
-
-%button-text-dark_font{
+%title-second-line_font {
     color: #333;
-font-family: Roboto, sans-serif;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 12px; /* 100% */
-letter-spacing: 2.4px;
-text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 100% */
 }
 
-%button-text-white_font{
-color: #FFF;
-font-family: Roboto, sans-serif;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 12px; /* 100% */
-letter-spacing: 2.4px;
-text-transform: uppercase;
+%text_font {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    /* 156.25% */
 }
 
-%input-text_font{
-color: #8D8D8D;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.56px;
+%text-mediun-size_font {
+    color: #333;
+    font-family: Roboto, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    /* 163.636% */
+}
+
+%button-text-dark_font {
+    color: #333;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    /* 100% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+%button-text-white_font {
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    /* 100% */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+%input-text_font {
+    color: #8D8D8D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+}
+
+%container_font {
+    font-family: Roboto, sans-serif;
+}
+
+%text__content_font {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+%text__title_font {
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+
+}
+
+%text__arrow-button_font {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2.4px;
+}
+
+%page-name_font {
+
+    font-size: 64px;
+    font-style: normal;
+    line-height: 64px;
+
 }
