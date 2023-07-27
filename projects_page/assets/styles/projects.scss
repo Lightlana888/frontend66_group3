@@ -1,27 +1,65 @@
 @import '../../../assets/styles/extend_fonts.scss';
-@import '../../../assets/styles/colors.css';
+@import '../../../assets/styles/colors.scss';
 
 
 
-.container {
+.projects-page {
 
     display: grid;
     gap: 20px;
     margin: 29px 135px 60px;
     width: 1170px;
     height: 435px;
-    @extend %container_font;
+    @extend %projects-page_font;
 }
 
-.block {
+.progects-page__page-name {
 
-    background-color: var(--primary-color);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 278px;
+    height: 128px;
+    @extend %progects-page__page-name_font;
+
+}
+
+.progects-page__page-name__word {
+    color: $accent-color;
+    font-weight: 300;
+
+}
+
+.progects-page__page-name__word+.progects-page__page-name__word {
+    color: $secondary-color;
+    font-weight: 700;
+}
+
+.progects-page__page-name::after {
+
+    content: "";
+    display: block;
+
+    background-color: $border-buttons-color;
+    margin-top: 30px;
+    margin-bottom: 29px;
+
+    width: 1170px;
+    height: 1px;
+    flex-shrink: 0;
+
+
+}
+
+.projects-page__description-block {
+
+    background-color: $primary-color;
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
 }
 
-.image {
+.projects-page__description-block__image {
     text-align: left;
     height: 50vh;
     object-fit: cover;
@@ -29,20 +67,12 @@
     height: 435px;
 }
 
-.text {
+.projects-page__description-block__text {
     width: 500px;
     height: 435px;
 }
 
-.text__content {
-    width: 400px;
-    height: 120px;
-    margin-top: 73px;
-    margin-left: 30px;
-    @extend %text__content_font;
-}
-
-.text__title {
+.projects-page__description-block__text__title {
     width: 440px;
     height: 47px;
     margin-top: 30px;
@@ -50,11 +80,21 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 300;
-    color: var(--accent-color);
-    @extend %text__title_font;
+    color: $accent-color;
+    @extend %projects-page__description-block__text__title_font;
 }
 
-.text__arrow-button {
+.projects-page__description-block__text__content {
+    width: 400px;
+    height: 120px;
+    margin-top: 73px;
+    margin-left: 30px;
+    @extend %projects-page__description-block__text__content_font;
+}
+
+
+
+.projects-page__description-block__text__view-more-button {
     padding: 5rem, 5rem;
     border: none;
     border-radius: 5px;
@@ -66,92 +106,54 @@
     letter-spacing: 2.4px;
     width: 222px;
     height: 71px;
-    background: var(--buttons-color);
+    background: $buttons-color;
     margin-top: 64px;
     margin-bottom: 30px;
     margin-left: 30px;
-    @extend %text__arrow-button_font;
+    @extend %projects-page__description-block__text__view-more-button_font;
 }
 
-.text__arrow-button::after {
+.projects-page__description-block__text__view-more-button::after {
     content: "\2192";
     margin-left: 20px;
 }
 
-.page-name {
-
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 278px;
-    height: 128px;
-    @extend %page-name_font;
-
-}
-
-.word {
-    color: var(--accent-color);
-    font-weight: 300;
-
-}
-
-.word+.word {
-    color: var(--secondary-color);
-    font-weight: 700;
-}
-
-.page-name::after {
-
-    content: "";
-    display: block;
-
-    background-color: var(--border-buttons-color);
-    margin-top: 30px;
-    margin-bottom: 29px;
-
-    width: 1170px;
-    height: 1px;
-    flex-shrink: 0;
 
 
-}
-
-.pagination {
+.projects-page__pagination {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
     margin-top: 75px;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
+    @extend %projects-page__pagination_font;
 }
 
-.current-page {
-    color: var(--secondary-color);
+.projects-page__pagination__current-page {
+    color: $secondary-color;
     margin-right: 1rem;
 
 }
 
-.next-page {
-    color: var(--accent-color);
+.projects-page__pagination__next-page {
+    color: $accent-color;
 }
 
-.arrow-left,
-.arrow-right {
+.projects-page__pagination__arrow-left,
+.projects-page__pagination__arrow-right {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 53px;
     height: 53px;
-    border: 1px solid var(--border-buttons-color);
-    background-color: var(--page-buttons-color);
+    border: 1px solid $border-buttons-color;
+    background-color: $arrow-buttons-color;
     margin-left: 29px;
     cursor: pointer;
 }
 
-.arrow-left svg,
-.arrow-right svg {
+.projects-page__pagination__arrow-left svg,
+.projects-page__pagination__arrow-right svg {
     width: 17.2px;
     height: 8px;
 }

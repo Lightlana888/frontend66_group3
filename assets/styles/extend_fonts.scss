@@ -107,18 +107,19 @@
     letter-spacing: 0.56px;
 }
 
-%container_font {
+%projects-page_font {
     font-family: Roboto, sans-serif;
 }
 
-%text__content_font {
-    font-size: 16px;
+%progects-page__page-name_font {
+
+    font-size: 64px;
     font-style: normal;
-    font-weight: 300;
-    line-height: 25px;
+    line-height: 64px;
+
 }
 
-%text__title_font {
+%projects-page__description-block__text__title_font {
 
     font-size: 40px;
     font-style: normal;
@@ -126,16 +127,22 @@
 
 }
 
-%text__arrow-button_font {
+%projects-page__description-block__text__content_font {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+
+%projects-page__description-block__text__view-more-button_font {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2.4px;
 }
 
-%page-name_font {
-
-    font-size: 64px;
+%projects-page__pagination_font {
+    font-size: 24px;
     font-style: normal;
-    line-height: 64px;
-
+    font-weight: 400;
 }
