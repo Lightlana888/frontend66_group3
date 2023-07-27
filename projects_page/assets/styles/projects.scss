@@ -1,21 +1,22 @@
 @import '../../../assets/styles/extend_fonts.scss';
 @import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/header.scss';
+@import '../../../assets/styles/footer.scss';
 
 
 
 .projects-page {
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    margin: 29px 135px 60px;
-    width: 1170px;
-    height: 435px;
-    @extend %projects-page_font;
+    margin: 0 135px;
+    @extend %projects-page_container_font;
 }
 
 .progects-page__page-name {
 
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 278px;
@@ -38,13 +39,11 @@
 .progects-page__page-name::after {
 
     content: "";
-    display: block;
-
+    display: flex;
     background-color: $border-buttons-color;
     margin-top: 30px;
     margin-bottom: 29px;
-
-    width: 1170px;
+    width: 85vw;
     height: 1px;
     flex-shrink: 0;
 
@@ -126,6 +125,7 @@
     align-items: center;
     padding: 10px;
     margin-top: 75px;
+    margin-bottom: 120px;
     @extend %projects-page__pagination_font;
 }
 
