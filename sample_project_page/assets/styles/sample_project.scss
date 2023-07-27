@@ -6,7 +6,7 @@
 .sample-project {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 0 135px;
     gap: 30px;
     @extend %sample-project_font;
 
@@ -15,7 +15,9 @@
 .sample-project__title {
     display: flex;
     flex-direction: column;
-    margin-right: 1046px;
+    align-items: flex-start;
+    width: 259px;
+    height: 128px;
     @extend %sample-project__title_font;
 }
 
@@ -30,9 +32,30 @@
     font-weight: 700;
 }
 
+.sample-project__title::after {
+
+    content: "";
+    display: flex;
+    background-color: $border-buttons-color;
+    margin: 30px 0 29px;
+    width: 85vw;
+    height: 1px;
+    flex-shrink: 0;
+
+
+}
+
 .sample-project_image-container {
-    display: grid;
-    grid-template-rows: auto auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sample-project_image-container__image-first img,
+.sample-project_image-container__image-third img,
+.sample-project_image-container__image-text {
+    width: 100%;
+    height: auto;
 }
 
 
@@ -51,11 +74,8 @@
     width: 721px;
     height: 428px;
     flex-shrink: 0;
-    margin-top: 30px;
-    margin-right: 135px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    @extend %sample-project_image-container__image-text__text;
+    margin: 30px 135px 30px 30px;
+    @extend %sample-project_image-container__image-text__text_font;
 }
 
 .sample-project_image-container__image-third {

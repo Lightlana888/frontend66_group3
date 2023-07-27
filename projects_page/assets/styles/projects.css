@@ -228,19 +228,14 @@
 .projects-page__description-block__text__title {
   width: 440px;
   height: 47px;
-  margin-top: 30px;
-  margin-left: 30px;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 300;
+  margin: 30px 0;
   color: #bdbdbd;
 }
 
 .projects-page__description-block__text__content {
   width: 400px;
   height: 120px;
-  margin-top: 73px;
-  margin-left: 30px;
+  margin: 73px 0 0 30px;
 }
 
 .projects-page__description-block__text__view-more-button {
@@ -248,17 +243,14 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 12px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 2.4px;
   width: 222px;
   height: 71px;
   background: #fff;
-  margin-top: 64px;
-  margin-bottom: 30px;
-  margin-left: 30px;
+  margin: 64px 30px 30px;
+  text-decoration: none;
 }
 
 .projects-page__description-block__text__view-more-button::after {
@@ -271,8 +263,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
-  margin-top: 75px;
-  margin-bottom: 120px;
+  margin: 75px 0 120px;
 }
 
 .projects-page__pagination__current-page {
