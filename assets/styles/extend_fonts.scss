@@ -146,3 +146,25 @@
     font-style: normal;
     font-weight: 400;
 }
+
+%sample-project_font {
+    font-family: Roboto, sans-serif;
+}
+
+%sample-project__title_font {
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    /* 100% */
+}
+
+%sample-project_image-container__image-text__text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    /* 156.25% */
+}
