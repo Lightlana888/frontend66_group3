@@ -21,6 +21,7 @@
 }
 
 %footer_font {
+    text-decoration: none;
     color: #FFF;
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -29,6 +30,7 @@
     line-height: 24px;
     /* 171.429% */
     letter-spacing: 0.42px;
+    text-decoration: none;
 }
 
 %title-first-line_font {
@@ -61,7 +63,7 @@
     /* 156.25% */
 }
 
-%text-mediun-size_font {
+%text-medium-size_font {
     color: #333;
     font-family: Roboto, sans-serif;
     font-size: 22px;

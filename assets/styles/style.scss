@@ -1,14 +1,9 @@
 @import 'extend_fonts';
 @import 'header';
+@import 'footer';
+
+// * {
+//     border: 1px solid rgba(0, 0, 0, 0.546);
+// }
 
 
-.main-page__main-project {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.main-project__image {
-    width: 100%;
-
-}
