@@ -369,6 +369,7 @@
 .form__item {
   padding: 10px;
   background-color: #F3F3F3;
+  border: none;
 }
 
 .form__message {
