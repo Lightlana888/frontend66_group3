@@ -15,11 +15,21 @@
     <header class="header">
       <div class="header__logo"></div>
       <nav class="header__navigation">
-        <a class="navigation__item" href="#">main</a>
-        <a class="navigation__item" href="#">gallery</a>
-        <a class="navigation__item" href="#">projects</a>
-        <a class="navigation__item" href="#">certifications</a>
-        <a class="navigation__item" href="#">contacts</a>
+        <a class="navigation__item" href="index.html">main</a>
+        <a class="navigation__item" href="./gallery_page/gallery.html"
+          >gallery</a
+        >
+        <a class="navigation__item" href="./projects_page/projects.html"
+          >projects</a
+        >
+        <a
+          class="navigation__item"
+          href="./certifications_page/certifications.html"
+          >certifications</a
+        >
+        <a class="navigation__item" href="./contacts_page/contacts.html"
+          >contacts</a
+        >
       </nav>
     </header>
     <div class="main-page">
@@ -28,10 +38,11 @@
         <div class="main-project__title title-second-line">Lorum</div>
         <div class="arrows-and-page-numbers"></div>
         <div class="main-project__image">
-          <button class="button-view-project">
-            View Project
-            <img src="./assets/images/arrow-2-right-long.svg" alt="arrow" />
-          </button>
+          <a
+            class="projects-page__description-block__text__view-more-button"
+            href="#"
+            >View project</a
+          >
         </div>
       </div>
       <div class="main-page__about">
@@ -47,52 +58,79 @@
           five centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged.
         </div>
-        <div class="button-read-more">
-          <div class="button-read-more__title">Read More</div>
-          <div class="button-read-more__arrow"></div>
-        </div>
+        <a
+          class="projects-page__description-block__text__view-more-button"
+          href="#"
+          >Read more</a
+        >
       </div>
       <div class="main-page__focus">
-        <div class="about__title title-fist-line">
+        <div class="focus__title title-fist-line">
           Main Focus/Mission Statement
         </div>
-        <div class="focus__number"></div>
-        <div class="focus__text"></div>
-        <div class="focus__number"></div>
-        <div class="focus__text"></div>
+        <div class="focus__number">1</div>
+        <div class="focus__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          efficitur, lectus et facilisis placerat.
+        </div>
+        <div class="focus__number">2</div>
+        <div class="focus__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          efficitur, lectus et facilisis placerat, magna mauris porttitor
+          tortor, a auctor est felis ut nisl.
+        </div>
       </div>
       <div class="main-page__projects">
         <div class="projects__title title-fist-line">Our Projects</div>
         <div class="projects__main-image">
-          <div class="main-image__title">Sample Project</div>
-          <div class="button-view-more">
-            <div class="button-view-more__title">View More</div>
-            <div class="button-view-more__arrow"></div>
-          </div>
+          <div class="main-image__title">Sample<br />Project</div>
+          <a
+            class="projects-page__description-block__text__view-more-button"
+            href="./sample_project_page/sample_project.html"
+            >View more</a
+          >
         </div>
-        <div class="projects__image"></div>
-        <div class="projects__image"></div>
-        <div class="projects__image"></div>
-        <div class="projects__image"></div>
-        <div class="button-all-projects">
-          <div class="button-all-projects__title">All Projects</div>
-          <div class="button-all-projects__arrow"></div>
-        </div>
+        <div class="projects__image2"></div>
+        <div class="projects__image3"></div>
+        <div class="projects__image4"></div>
+        <div class="projects__image5"></div>
+        <a
+          class="projects-page__description-block__text__view-more-button"
+          href="./projects_page/projects.html"
+          >All projects</a
+        >
       </div>
       <div class="main-page__contact-us">
         <div class="contact-us__title title-fist-line">Contact Us</div>
         <div class="contact-us__form">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Phone Number*" />
-          <input type="text" placeholder="E-mail*" />
-          <input type="text" placeholder="Interested In" />
-          <input type="text" placeholder="Message*" />
+          <input type="text" placeholder="Name" class="form__item form__name" />
+          <input
+            type="text"
+            placeholder="Phone Number*"
+            class="form__item form__number"
+          />
+          <input
+            type="text"
+            placeholder="E-mail*"
+            class="form__item form__mail"
+          />
+          <input
+            type="text"
+            placeholder="Interested In"
+            class="form__item form__interested-in"
+          />
+          <input
+            type="text"
+            placeholder="Message*"
+            class="form__item form__message"
+          />
         </div>
         <div class="contact-us__image"></div>
-        <div class="button-send-email">
-          <div class="button-send-email__title">Send Email</div>
-          <div class="button-send-email__arrow"></div>
-        </div>
+        <a
+          class="projects-page__description-block__text__view-more-button contact-us__button"
+          href="#"
+          >Send Email</a
+        >
       </div>
     </div>
     <footer class="footer">
@@ -101,14 +139,32 @@
         <a class="information-navigation__title footer__title" href="#"
           >Information</a
         >
-        <a class="information-navigation__item" href="#">Main</a>
-        <a class="information-navigation__item" href="#">Gallery</a>
-        <a class="information-navigation__item" href="#">Pojects</a>
-        <a class="information-navigation__item" href="#">Certifications</a>
-        <a class="information-navigation__item" href="#">Contacts</a>
+        <a class="information-navigation__item" href="index.html">Main</a>
+        <a
+          class="information-navigation__item"
+          href="./gallery_page/gallery.html"
+          >Gallery</a
+        >
+        <a
+          class="information-navigation__item"
+          href="./projects_page/projects.html"
+          >Pojects</a
+        >
+        <a
+          class="information-navigation__item"
+          href="./certifications_page/certifications.html"
+          >Certifications</a
+        >
+        <a
+          class="information-navigation__item"
+          href="./contacts_page/contacts.html"
+          >Contacts</a
+        >
       </nav>
       <div class="footer__contacts-navigation">
-        <a class="contacts-navigation__title footer__title" href="#"
+        <a
+          class="contacts-navigation__title footer__title"
+          href="./contacts_page/contacts.html"
           >Contacts</a
         >
         <div class="contacts-navigation__icon">
