@@ -73,6 +73,16 @@
   /* 163.636% */
 }
 
+.form__item {
+  color: #8D8D8D;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -170,10 +180,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 183.333% */
-}
-
-* {
-  border: 1px solid rgba(0, 0, 0, 0.546);
 }
 
 .main-page__main-project {
@@ -338,7 +344,7 @@
 .main-page__contact-us {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(5, 1fr) 3fr;
+  grid-template-rows: 1fr 4fr 3fr 2fr;
   padding-left: 8vw;
   padding-right: 8vw;
   -moz-column-gap: 30px;
@@ -348,4 +354,30 @@
 
 .contact-us__title {
   grid-column: span 3;
+}
+
+.contact-us__button {
+  grid-column: span 3;
+}
+
+.contact-us__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__item {
+  padding: 10px;
+  background-color: #F3F3F3;
+}
+
+.form__message {
+  flex-grow: 1;
+}
+
+.contact-us__image {
+  background-image: url(../images/contact_us.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
