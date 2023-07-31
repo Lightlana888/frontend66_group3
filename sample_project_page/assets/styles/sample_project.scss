@@ -8,7 +8,6 @@
     flex-direction: column;
     margin: 0 135px;
     gap: 30px;
-    @extend %sample-project_font;
 
 }
 
@@ -16,20 +15,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 259px;
-    height: 128px;
-    @extend %sample-project__title_font;
+    margin-top: 60px;
 }
 
-.sample-project__title__word {
-    color: $accent-color;
-    font-weight: 300;
+.sample-project__title_title-fist-line {
+    @extend %title-first-line_font;
 
 }
 
-.sample-project__title__word+.sample-project__title__word {
-    color: $secondary-color;
-    font-weight: 700;
+.sample-project__title_title-second-line {
+    @extend %title-second-line_font;
 }
 
 .sample-project__title::after {
@@ -59,9 +54,6 @@
     height: auto;
 }
 
-
-
-
 .sample-project_image-container__image-text {
     display: flex;
     flex-direction: row;
@@ -69,38 +61,15 @@
     margin: 30px 0;
 }
 
-
-
 .sample-project_image-container__image-text__text {
     display: flex;
     flex-wrap: wrap;
     margin-right: 135px;
     margin-bottom: 30px;
     margin-left: 30px;
-    @extend %sample-project_image-container__image-text__text_font;
+    @extend %text_font;
 }
 
 .sample-project_image-container__image-third {
     margin-bottom: 120px;
-}
-
-.projects-page__description-block__text__view-more-button {
-    padding: 5rem, 5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 222px;
-    height: 71px;
-    background: $buttons-color;
-    margin: 64px 30px 30px;
-    text-decoration: none;
-    @extend %projects-page__description-block__text__view-more-button_font;
-}
-
-.projects-page__description-block__text__view-more-button::after {
-    content: "\2192";
-    margin-left: 20px;
 }
