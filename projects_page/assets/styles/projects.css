@@ -250,6 +250,13 @@
   text-decoration: none;
 }
 
+.projects-page__description-block__text__view-more-button:hover {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  text-decoration: none;
+  background-color: #f2f2f2;
+}
+
 .projects-page__description-block__text__view-more-button::after {
   content: "→";
   margin-left: 20px;
@@ -283,6 +290,13 @@
   background-color: #f9f9f9;
   margin-left: 29px;
   cursor: pointer;
+}
+
+.projects-page__pagination__arrow-left:hover,
+.projects-page__pagination__arrow-right:hover {
+  background-color: #f2f2f2;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
 }
 
 .projects-page__pagination__arrow-left svg,

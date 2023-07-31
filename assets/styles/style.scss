@@ -1,6 +1,7 @@
 @import 'extend_fonts';
 @import 'header';
 @import 'footer';
+@import 'colors';
 
 // * {
 //     border: 1px solid rgba(0, 0, 0, 0.546);
@@ -15,7 +16,7 @@
     grid-template-rows: 4fr 1fr 1fr 1fr;
     padding-left: 8vw;
     padding-right: 8vw;
-    
+
 }
 
 .main-project__image {
@@ -94,16 +95,16 @@
     grid-column: span 4;
 }
 
-.focus__number{
+.focus__number {
 
     align-self: center;
     margin-left: 30px;
     color: #F2F2F2;
-font-family: Roboto;
-font-size: 200px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
+    font-family: Roboto;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
 
 .focus__text {
@@ -128,13 +129,15 @@ line-height: normal;
     padding-top: 30px;
     padding-left: 50px;
 }
+
 .main-image__title {
     color: #FFF;
-font-family: Roboto, sans-serif;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: 64px; /* 100% */
+    font-family: Roboto, sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 100% */
 }
 
 .projects__main-image {
@@ -204,11 +207,12 @@ line-height: 64px; /* 100% */
 
 .form__item {
     padding: 10px;
-@extend %input-text_font;
-background-color: #F3F3F3;
-border: none;
+    @extend %input-text_font;
+    background-color: #F3F3F3;
+    border: none;
 
 }
+
 .form__message {
     flex-grow: 1;
 }
