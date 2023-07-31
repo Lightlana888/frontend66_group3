@@ -1,0 +1,48 @@
+@import '../../../assets/styles/extend_fonts.scss';
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/header.scss';
+@import '../../../assets/styles/footer.scss';
+
+.certification-page {
+    margin: 0 135px;
+}
+
+.certification-page__title {
+    margin-top: 60px;
+
+}
+
+.certification-page__title::after {
+    content: "";
+    display: flex;
+    background-color: $border-buttons-color;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    width: 85vw;
+    height: 1px;
+    flex-shrink: 0;
+
+}
+
+.certification-page__title_title-fist-line {
+    @extend %title-first-line_font;
+}
+
+.certification-page__title_title-second-line {
+    @extend %title-second-line_font;
+}
+
+.certification-page__image-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(35em, 1fr));
+    grid-template-rows: repeat(2, 40em);
+    margin: 120px 0;
+
+}
+
+.certification-page__image-container>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
