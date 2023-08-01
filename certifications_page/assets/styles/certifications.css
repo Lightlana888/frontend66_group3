@@ -174,9 +174,9 @@
 
 .certification-page__image-container {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
-  grid-template-rows: repeat(2, 23em);
+  grid-template-rows: repeat(2, 25em);
   margin: 120px 0;
 }
 

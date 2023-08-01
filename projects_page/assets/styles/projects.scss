@@ -35,7 +35,7 @@
     background-color: $border-buttons-color;
     margin-top: 30px;
     margin-bottom: 29px;
-    width: 85vw;
+
     height: 1px;
     flex-shrink: 0;
 
@@ -146,4 +146,51 @@
 .projects-page__pagination__arrow-right svg {
     width: 17.2px;
     height: 8px;
+}
+
+@media screen and (max-width: 424px) {
+    .projects-page__description-block {
+
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .projects-page__description-block__text__view-more-button {
+        margin-bottom: 1rem;
+    }
+
+    .projects-page__description-block>div>img {
+        max-width: 100%;
+    }
+
+    .projects-page__description-block__image {
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    .projects-page__description-block {
+
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .projects-page__description-block__text__view-more-button {
+        margin-bottom: 1rem;
+    }
+
+    .projects-page__description-block>div>img {
+        max-width: 100%;
+    }
+
+    .projects-page__description-block__image {
+        text-align: center;
+    }
 }
