@@ -34,7 +34,7 @@
     display: flex;
     background-color: $border-buttons-color;
     margin-top: 30px;
-    margin-bottom: 29px;
+
 
     height: 1px;
     flex-shrink: 0;
@@ -149,6 +149,12 @@
 }
 
 @media screen and (max-width: 424px) {
+    .projects-page__title>div {
+        font-size: 26px;
+        line-height: 26px;
+
+    }
+
     .projects-page__description-block {
 
         background-color: $primary-color;
@@ -156,6 +162,10 @@
         flex-direction: column;
 
 
+    }
+
+    .projects-page__description-block__text__title {
+        font-size: 24px;
     }
 
     .projects-page__description-block__text__view-more-button {
@@ -173,13 +183,21 @@
 
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
+    .projects-page__title>div {
+        font-size: 30px;
+        line-height: 30px;
+
+    }
+
     .projects-page__description-block {
 
         background-color: $primary-color;
         display: flex;
         flex-direction: column;
+    }
 
-
+    .projects-page__description-block__text__title {
+        font-size: 28px;
     }
 
     .projects-page__description-block__text__view-more-button {
