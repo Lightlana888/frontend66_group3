@@ -5,29 +5,14 @@
 
 .contact-page {
     margin: 0 135px;
-}
-
-.contact-page__title {
-    margin-top: 60px;
-
-}
-
-.contact-page__title::after {
-    content: "";
     display: flex;
-    background-color: $border-buttons-color;
-    margin-top: 60px;
-    margin-bottom: 10px;
-    width: 85vw;
-    height: 1px;
-    flex-shrink: 0;
-
+    flex-direction: row;
 }
 
-.contact-page__title_title-fist-line {
+.contact-page__title-fist-line {
     @extend %title-first-line_font;
 }
 
-.contact-page__title_title-second-line {
+.contact-page__title-second-line {
     @extend %title-second-line_font;
 }

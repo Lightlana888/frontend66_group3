@@ -33,7 +33,7 @@
   text-decoration: none;
 }
 
-.contact-page__title_title-fist-line {
+.contact-page__title-fist-line {
   color: #BDBDBD;
   font-family: Roboto, sans-serif;
   font-size: 64px;
@@ -43,7 +43,7 @@
   /* 100% */
 }
 
-.contact-page__title_title-second-line {
+.contact-page__title-second-line {
   color: #333;
   font-family: Roboto, sans-serif;
   font-size: 64px;
@@ -227,19 +227,6 @@
 
 .contact-page {
   margin: 0 135px;
-}
-
-.contact-page__title {
-  margin-top: 60px;
-}
-
-.contact-page__title::after {
-  content: "";
   display: flex;
-  background-color: #f2f2f2;
-  margin-top: 60px;
-  margin-bottom: 10px;
-  width: 85vw;
-  height: 1px;
-  flex-shrink: 0;
+  flex-direction: row;
 }/*# sourceMappingURL=contacts.css.map */
