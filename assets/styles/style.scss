@@ -323,9 +323,36 @@
         grid-column: span 12;
     }
 }
-
 .projects__button {
-    grid-column: 9 / 13
+    grid-column: 9 / 13;
+    justify-self: end;
+    @extend %button-text-white_font;
+    background-color: rgba(51, 51, 51, 1);
+    border-radius: 0px;
+}
+
+.main-image__button {
+    padding: 5rem, 5rem;
+    border: none;
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+    width: 222px;
+    height: 71px;
+    text-decoration: none;
+    background-color: rgba(28,28,28,0);
+    @extend %button-text-white_font;
+}
+
+.main-image__button:after {
+    content: "\2192";
+    margin-left: 20px;
+}
+
+.main-image__button:hover {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
 }
 
 .main-page__contact-us {
@@ -344,6 +371,9 @@
 
 .contact-us__button {
     grid-column: span 3;
+    @extend %button-text-white_font;
+    background-color: rgba(51, 51, 51, 1);
+    border-radius: 0px;
 }
 
 .contact-us__form {

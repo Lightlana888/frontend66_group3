@@ -86,6 +86,18 @@
   text-transform: uppercase;
 }
 
+.contact-us__button, .main-image__button, .projects__button {
+  color: #FFF;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  /* 100% */
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
 .form__item {
   color: #8D8D8D;
   font-family: Roboto;
@@ -352,6 +364,18 @@
 
 .projects-page__description-block__text__view-more-button {
   color: #333;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  /* 100% */
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.contact-us__button, .main-image__button, .projects__button {
+  color: #FFF;
   font-family: Roboto, sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -811,6 +835,32 @@
 
 .projects__button {
   grid-column: 9/13;
+  justify-self: end;
+  background-color: rgb(51, 51, 51);
+  border-radius: 0px;
+}
+
+.main-image__button {
+  padding: 5rem, 5rem;
+  border: none;
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  width: 222px;
+  height: 71px;
+  text-decoration: none;
+  background-color: rgba(28, 28, 28, 0);
+}
+
+.main-image__button:after {
+  content: "→";
+  margin-left: 20px;
+}
+
+.main-image__button:hover {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  text-decoration: none;
 }
 
 .main-page__contact-us {
@@ -830,6 +880,8 @@
 
 .contact-us__button {
   grid-column: span 3;
+  background-color: rgb(51, 51, 51);
+  border-radius: 0px;
 }
 
 .contact-us__form {
