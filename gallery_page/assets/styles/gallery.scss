@@ -1,2 +1,93 @@
+@import '../../../assets/styles/extend_fonts.scss';
+@import '../../../assets/styles/colors.scss';
 @import '../../../assets/styles/header.scss';
 @import '../../../assets/styles/footer.scss';
+
+.gallery-page {
+    margin: 0 135px;
+}
+
+.gallery-page__title {
+    margin-top: 60px;
+
+}
+
+.gallery-page__title::after {
+    content: "";
+    display: flex;
+    background-color: $border-buttons-color;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    width: 85vw;
+    height: 1px;
+    flex-shrink: 0;
+
+}
+
+.gallery-page__title_title-fist-line {
+    @extend %title-first-line_font;
+}
+
+.gallery-page__title_title-second-line {
+    @extend %title-second-line_font;
+}
+
+.gallery-page__image-container {
+    display: grid;
+    grid-gap: 29px;
+    grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+    grid-template-rows: repeat(2, 20em);
+    margin: 70px 0;
+
+}
+
+.gallery-page__image-container>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-page__pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin: 75px 0 120px;
+    @extend %projects-page__pagination_font;
+}
+
+.gallery-page__pagination__current-page {
+    color: $secondary-color;
+    margin-right: 1rem;
+
+}
+
+.gallery-page__pagination__next-page {
+    color: $accent-color;
+}
+
+.gallery-page__pagination__arrow-left,
+.gallery-page__pagination__arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 53px;
+    height: 53px;
+    border: 1px solid $border-buttons-color;
+    background-color: $arrow-buttons-color;
+    margin-left: 29px;
+    cursor: pointer;
+}
+
+.gallery-page__pagination__arrow-left:hover,
+.gallery-page__pagination__arrow-right:hover {
+    background-color: $border-buttons-color;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.gallery-page__pagination__arrow-left svg,
+.gallery-page__pagination__arrow-right svg {
+    width: 17.2px;
+    height: 8px;
+}
