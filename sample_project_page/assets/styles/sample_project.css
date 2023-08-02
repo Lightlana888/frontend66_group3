@@ -310,6 +310,7 @@
   }
   .sample-project_image-container__image-text__text {
     padding: 0 1rem 1rem 1rem;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 425px) and (max-width: 767px) {
@@ -336,5 +337,6 @@
   }
   .sample-project_image-container__image-text__text {
     padding: 0 1rem 1rem 1rem;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=sample_project.css.map */
