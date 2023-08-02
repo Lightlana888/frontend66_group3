@@ -40,7 +40,6 @@
     font-style: normal;
     font-weight: 300;
     line-height: 64px;
-    text-transform: uppercase;
     /* 100% */
 }
 
@@ -117,7 +116,9 @@
 }
 
 %projects-page__pagination_font {
+    font-family: Roboto, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
 }
+
