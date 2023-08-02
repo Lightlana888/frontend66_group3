@@ -1,0 +1,145 @@
+@import '../../../assets/styles/extend_fonts.scss';
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/header.scss';
+@import '../../../assets/styles/footer.scss';
+@import '../../../assets/styles/buttons-pages.scss';
+
+.contact-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.contact-page__page-name {
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+}
+
+.contact-page__title {
+    margin-top: 65px;
+}
+
+.contact-page__page-name__title-fist-line {
+    @extend %title-first-line_font;
+}
+
+.contact-page__page-name__title-second-line {
+    @extend %title-second-line_font;
+
+}
+
+.contact-page__company-name {
+    @extend %contact-page__company-name_font;
+
+}
+
+.contact-page__company-address {
+    color: #333;
+    @extend %text_font;
+
+}
+
+.contact-page__company-coordinates {
+    @extend %contact-page__company-name_font;
+
+
+}
+
+.contact-page__company-mail {
+    @extend %text_font;
+    color: #333;
+    line-height: normal;
+
+    margin-bottom: 20px;
+}
+
+.contact_us__button {
+
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 222px;
+    height: 71px;
+    text-decoration: none;
+    background-color: $secondary-color;
+    @extend %button-text-white_font;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+}
+
+.contact_us__button:hover {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
+    background-color: $accent-color;
+    color: #333;
+
+
+}
+
+.contact-page__map>iframe {
+    margin-top: 65px;
+    width: 40em;
+    height: 40em;
+    max-width: 100%;
+
+}
+
+@media screen and (max-width: 424px) {
+    .contact-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .contact-page__page-name {
+        gap: 1em;
+    }
+
+    .contact-page__title>div {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .contact_us__button {
+        margin: 0;
+    }
+
+    .contact-page__map>iframe {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    .contact-page {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .contact-page__page-name {
+        gap: 1em;
+    }
+
+    .contact-page__title>div {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .contact_us__button {
+        margin: 0;
+    }
+
+    .contact-page__map>iframe {
+        margin-bottom: 10px;
+
+    }
+}

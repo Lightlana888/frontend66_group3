@@ -26,8 +26,8 @@
     gap: 2vw;
 
     @media screen and (max-width: 767px) {
-    flex-wrap: wrap;
-    gap: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 }
 
@@ -37,9 +37,9 @@
     @extend %header_font;
 
     @media screen and (max-width: 767px) {
-    flex-grow: 1;
-    justify-content: space-between;
-    width: 30%;
+        flex-grow: 1;
+        justify-content: space-between;
+        width: 30%;
     }
 }
 
@@ -47,4 +47,3 @@
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
 }
-
