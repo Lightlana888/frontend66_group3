@@ -482,8 +482,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
 }
 
 .contact-page__page-name {
@@ -493,7 +493,7 @@
 }
 
 .contact-page__title {
-  margin-top: 65px;
+  margin-top: 70px;
 }
 
 .contact-page__company-address {
