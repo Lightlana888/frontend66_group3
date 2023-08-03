@@ -350,6 +350,14 @@
     border-radius: 0px;
 }
 
+.projects__button:hover {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
+    background-color: $accent-color;
+    color: #333;
+}
+
 .main-image__button {
     padding: 5rem, 5rem;
     border: none;
@@ -363,16 +371,12 @@
     @extend %button-text-white_font;
 }
 
-.main-image__button:after {
-    content: "\2192";
-    margin-left: 20px;
+.main-image__button:hover {
+    text-decoration: underline white;
+    background-color: rgba(28,28,28,0);
+    border-top: none;
 }
 
-.main-image__button:hover {
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-    text-decoration: none;
-}
 
 .main-page__contact-us {
     display: grid;
@@ -393,6 +397,14 @@
     @extend %button-text-white_font;
     background-color: rgba(51, 51, 51, 1);
     border-radius: 0px;
+}
+
+.contact-us__button:hover {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
+    background-color: $accent-color;
+    color: #333;
 }
 
 .contact-us__form {
