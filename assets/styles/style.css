@@ -519,6 +519,7 @@
   flex-direction: column-reverse;
   align-items: flex-start;
   gap: 20px;
+  margin-top: 10px;
 }
 @media screen and (max-width: 767px) {
   .main-project__pagination {
@@ -860,6 +861,12 @@
   background-color: rgb(51, 51, 51);
   border-radius: 0px;
 }
+@media screen and (max-width: 424px) {
+  .projects__button {
+    grid-column: span 12;
+    justify-self: start;
+  }
+}
 
 .projects__button:hover {
   border-top: 1px solid #333;
@@ -901,6 +908,7 @@
 
 .contact-us__title {
   grid-column: span 3;
+  margin-top: 30px;
 }
 
 .contact-us__button {
