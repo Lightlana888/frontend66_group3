@@ -229,7 +229,8 @@
 }
 
 .gallery-page {
-  margin: 0 135px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .gallery-page__title {
@@ -242,7 +243,6 @@
   background-color: #f2f2f2;
   margin-top: 60px;
   margin-bottom: 10px;
-  width: 85vw;
   height: 1px;
   flex-shrink: 0;
 }
@@ -303,4 +303,17 @@
 .gallery-page__pagination__arrow-right svg {
   width: 17.2px;
   height: 8px;
+}
+
+@media screen and (max-width: 424px) {
+  .gallery-page__title > div {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .gallery-page__title > div {
+    font-size: 50px;
+    line-height: 50px;
+  }
 }/*# sourceMappingURL=gallery.css.map */

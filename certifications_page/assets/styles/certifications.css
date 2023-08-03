@@ -258,8 +258,8 @@
 
 @media screen and (max-width: 424px) {
   .certification-page__title > div {
-    font-size: 26px;
-    line-height: 26px;
+    font-size: 40px;
+    line-height: 40px;
   }
   .certification-page__image-container {
     grid-gap: 1px;
@@ -269,8 +269,8 @@
 }
 @media screen and (min-width: 425px) and (max-width: 767px) {
   .certification-page__title > div {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 50px;
+    line-height: 50px;
   }
   .certification-page__image-container {
     grid-gap: 10px;
