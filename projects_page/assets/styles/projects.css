@@ -118,6 +118,7 @@
 .header__navigation {
   display: flex;
   gap: 2vw;
+  justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .header__navigation {
@@ -128,14 +129,9 @@
 
 .navigation__item {
   display: flex;
+  flex-basis: auto;
   cursor: pointer;
-}
-@media screen and (max-width: 767px) {
-  .navigation__item {
-    flex-grow: 1;
-    justify-content: space-between;
-    width: 30%;
-  }
+  flex-basis: auto;
 }
 
 .navigation__item:hover {
