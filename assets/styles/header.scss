@@ -24,6 +24,7 @@
 .header__navigation {
     display: flex;
     gap: 2vw;
+    justify-content: space-between;
 
     @media screen and (max-width: 767px) {
         flex-wrap: wrap;
@@ -33,14 +34,10 @@
 
 .navigation__item {
     display: flex;
+    flex-basis: auto;
     cursor: pointer;
     @extend %header_font;
-
-    @media screen and (max-width: 767px) {
-        flex-grow: 1;
-        justify-content: space-between;
-        width: 30%;
-    }
+    flex-basis: auto;
 }
 
 .navigation__item:hover {
