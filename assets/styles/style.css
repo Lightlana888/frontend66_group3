@@ -514,6 +514,29 @@
   }
 }
 
+.main-project__pagination {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  .main-project__pagination {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px;
+  }
+}
+
+.pagination__arrows {
+  display: inline-flex;
+}
+
+.projects-page__pagination__arrow-left {
+  margin-left: 0px;
+}
+
 .main-project__image {
   grid-column: 2/3;
   grid-row: 1/5;
