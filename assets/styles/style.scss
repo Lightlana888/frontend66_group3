@@ -449,70 +449,172 @@
         display: none;
     }
 }
-// input with star
-.label-star {
-    position: relative;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    color: #8D8D8D;
-}
+// // input with star 1.0
+// .label-star {
+//     position: relative;
+//     float: left;
+//     display: flex;
+//     flex-direction: column;
+//     color: #8D8D8D;
+// }
   
-.label-star .placeholder-star {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    cursor: text;
-    @extend %input-text_font;
+// .label-star .placeholder-star {
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     cursor: text;
+//     @extend %input-text_font;
 
-}
+// }
   
-  .input-star {
-    padding: 10px;
-    outline: none;
-    background-color: #F3F3F3;
-    border: none;
-  }
+//   .input-star {
+//     padding: 10px;
+//     outline: none;
+//     background-color: #F3F3F3;
+//     border: none;
+//   }
   
-.input-star:invalid + .placeholder-star:before {
-    content: attr(placeholder);
-    position: relative;
-  }
+// .input-star:invalid + .placeholder-star:before {
+//     content: attr(placeholder);
+//     position: relative;
+//   }
   
-.input-star:invalid + .placeholder-star:after {
-    content: '*';
-    position: relative;
-    color: red;
-  }
+// .input-star:invalid + .placeholder-star:after {
+//     content: '*';
+//     position: relative;
+//     color: red;
+//   }
 
 
 //   input without star
 
-.label-withoutStar {
-    position: relative;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    color: #8D8D8D;
-}
+// .label-withoutStar {
+//     position: relative;
+//     float: left;
+//     display: flex;
+//     flex-direction: column;
+//     color: #8D8D8D;
+// }
   
-.label-withoutStar .placeholder-withoutStar {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    cursor: text;
-    @extend %input-text_font;
+// .label-withoutStar .placeholder-withoutStar {
+//     position: absolute;
+//     top: 10px;
+//     left: 10px;
+//     cursor: text;
+//     @extend %input-text_font;
 
-}
+// }
   
-  .input-withoutStar {
-    padding: 10px;
-    outline: none;
-    background-color: #F3F3F3;
-    border: none;
-  }
+//   .input-withoutStar {
+//     padding: 10px;
+//     outline: none;
+//     background-color: #F3F3F3;
+//     border: none;
+//   }
   
-.input-withoutStar:invalid + .placeholder-withoutStar:before {
-    content: attr(placeholder);
+// .input-withoutStar:invalid + .placeholder-withoutStar:before {
+//     content: attr(placeholder);
+//     position: relative;
+//   }
+
+// // input with star 2.0
+
+.textfield-star {
     position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    @extend %input-text_font;
+    color: #8D8D8D;
+    &__label-star {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: block;
+      user-select: none;
+      cursor: text;
+      &::after {
+        position: relative;
+        top: -3px;
+        left: 1px;
+        display: inline-block;
+        content: "*";
+        color: #d0011b;
+      }
+    }
+    &__input-star {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #F3F3F3;
+      outline: none;
+      transition: all 0.25s linear;
+
+      &:disabled {
+        border-color: #e6e6e6;
+        background: #f9fafb;
+      }
+      // hide original placeholder
+      &::placeholder {
+        color: transparent;
+      }
+      // fixes for hiding original placeholder
+      // &:focus::placeholder,
+      // &:focus:-ms-input-placeholder,
+      // &:required::placeholder,
+      // &:required:-ms-input-placeholder, {
+      //   color: transparent;
+      // }
+      // show original placeholder for not required filds
+      // &:optional::placeholder {
+      //   color: rgba(77, 77, 77, 0.5);
+      // }
+    }
+    // &__input:focus + &__label,
+    // &__input:valid + &__label,
+    // &__input:disabled + &__label {
+    //   display: none;
+    // }
+  }
+
+// // input without star 2.0
+
+  .textfield {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    @extend %input-text_font;
+    color: #8D8D8D;
+    &__label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: block;
+      user-select: none;
+      cursor: text;
+    }
+    &__input {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #F3F3F3;
+      outline: none;
+      transition: all 0.25s linear;
+
+      &:disabled {
+        border-color: #e6e6e6;
+        background: #f9fafb;
+      }
+      // hide original placeholder
+      &::placeholder {
+        color: transparent;
+      }
+    }
   }
