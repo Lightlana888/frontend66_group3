@@ -98,8 +98,7 @@
   text-transform: uppercase;
 }
 
-.form__item {
-  color: #8D8D8D;
+.label-withoutStar .placeholder-withoutStar, .label-star .placeholder-star {
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -382,8 +381,7 @@
   text-transform: uppercase;
 }
 
-.form__item {
-  color: #8D8D8D;
+.label-withoutStar .placeholder-withoutStar, .label-star .placeholder-star {
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -932,16 +930,6 @@
   }
 }
 
-.form__item {
-  padding: 10px;
-  background-color: #F3F3F3;
-  border: none;
-}
-
-.form__message {
-  flex-grow: 1;
-}
-
 .contact-us__image {
   background-image: url(../images/contact_us.png);
   background-repeat: no-repeat;
@@ -952,4 +940,64 @@
   .contact-us__image {
     display: none;
   }
+}
+
+.label-star {
+  position: relative;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  color: #8D8D8D;
+}
+
+.label-star .placeholder-star {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: text;
+}
+
+.input-star {
+  padding: 10px;
+  outline: none;
+  background-color: #F3F3F3;
+  border: none;
+}
+
+.input-star:invalid + .placeholder-star:before {
+  content: attr(placeholder);
+  position: relative;
+}
+
+.input-star:invalid + .placeholder-star:after {
+  content: "*";
+  position: relative;
+  color: red;
+}
+
+.label-withoutStar {
+  position: relative;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  color: #8D8D8D;
+}
+
+.label-withoutStar .placeholder-withoutStar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: text;
+}
+
+.input-withoutStar {
+  padding: 10px;
+  outline: none;
+  background-color: #F3F3F3;
+  border: none;
+}
+
+.input-withoutStar:invalid + .placeholder-withoutStar:before {
+  content: attr(placeholder);
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

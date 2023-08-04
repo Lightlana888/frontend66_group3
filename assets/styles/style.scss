@@ -424,16 +424,20 @@
     }
 }
 
-.form__item {
-    padding: 10px;
-    @extend %input-text_font;
-    background-color: #F3F3F3;
-    border: none;
-}
+// .form__item {
+//     padding: 10px;
+//     @extend %input-text_font;
+//     background-color: #F3F3F3;
+//     border: none;
+// }
 
-.form__message {
-    flex-grow: 1;
-}
+// .form__item:active, 
+// .form__item:hover, 
+// .form__item:focus {
+//     outline: 0;
+//     outline-offset: 0;
+// }
+
 
 .contact-us__image {
     background-image: url(../images/contact_us.png);
@@ -445,4 +449,70 @@
         display: none;
     }
 }
+// input with star
+.label-star {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    color: #8D8D8D;
+}
+  
+.label-star .placeholder-star {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: text;
+    @extend %input-text_font;
 
+}
+  
+  .input-star {
+    padding: 10px;
+    outline: none;
+    background-color: #F3F3F3;
+    border: none;
+  }
+  
+.input-star:invalid + .placeholder-star:before {
+    content: attr(placeholder);
+    position: relative;
+  }
+  
+.input-star:invalid + .placeholder-star:after {
+    content: '*';
+    position: relative;
+    color: red;
+  }
+
+
+//   input without star
+
+.label-withoutStar {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    color: #8D8D8D;
+}
+  
+.label-withoutStar .placeholder-withoutStar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: text;
+    @extend %input-text_font;
+
+}
+  
+  .input-withoutStar {
+    padding: 10px;
+    outline: none;
+    background-color: #F3F3F3;
+    border: none;
+  }
+  
+.input-withoutStar:invalid + .placeholder-withoutStar:before {
+    content: attr(placeholder);
+    position: relative;
+  }

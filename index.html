@@ -159,28 +159,34 @@
       <div class="main-page__contact-us">
         <div class="contact-us__title title-fist-line">Contact Us</div>
         <div class="contact-us__form">
-          <input type="text" placeholder="Name" class="form__item form__name" />
-          <input
-            type="text"
-            placeholder="Phone Number*"
-            class="form__item form__number"
-          />
-          <input
-            type="text"
-            placeholder="E-mail*"
-            class="form__item form__mail"
-          />
-          <input
-            type="text"
-            placeholder="Interested In"
-            class="form__item form__interested-in"
-          />
-          <textarea
-            type="text"
-            placeholder="Message*"
-            class="form__item form__message"
-            rows="5"
-          ></textarea>
+          <label class="label-withoutStar">
+            <input required class="input-withoutStar" /><span
+              placeholder="Name"
+              class="placeholder-withoutStar"
+            ></span>
+          </label>
+          <label class="label-star">
+            <input required class="input-star" /><span
+              placeholder="Phone Number"
+              class="placeholder-star"
+            ></span>
+          </label>
+          <label class="label-star">
+            <input required class="input-star" /><span
+              placeholder="E-mail"
+              class="placeholder-star"
+            ></span>
+          </label>
+          <label class="label-withoutStar">
+            <input required class="input-withoutStar" /><span
+              placeholder="Interested In"
+              class="placeholder-withoutStar"
+            ></span>
+          </label>
+          <label class="label-star">
+            <textarea required class="input-star" rows="5"></textarea
+            ><span placeholder="Message" class="placeholder-star"></span>
+          </label>
         </div>
         <div class="contact-us__image"></div>
         <a
