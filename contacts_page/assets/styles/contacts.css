@@ -485,7 +485,7 @@
 .contact-page__page-name {
   display: flex;
   flex-direction: column;
-  gap: 6em;
+  gap: 3em;
 }
 
 .contact-page__title {
@@ -496,10 +496,13 @@
   color: #333;
 }
 
+.contact-page__company-coordinates {
+  margin-bottom: 3rem;
+}
+
 .contact-page__company-mail {
   color: #333;
   line-height: normal;
-  margin-bottom: 20px;
 }
 
 .contact_us__button {
@@ -511,8 +514,7 @@
   height: 71px;
   text-decoration: none;
   background-color: #333333;
-  margin-top: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 8rem;
 }
 
 .contact_us__button:hover {
@@ -525,8 +527,8 @@
 
 .contact-page__map > iframe {
   margin-top: 65px;
-  width: 40em;
-  height: 40em;
+  width: 50rem;
+  height: 31em;
   max-width: 100%;
 }
 

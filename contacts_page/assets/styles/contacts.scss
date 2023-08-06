@@ -15,7 +15,7 @@
 .contact-page__page-name {
     display: flex;
     flex-direction: column;
-    gap: 6em;
+    gap: 3em;
 }
 
 .contact-page__title {
@@ -44,7 +44,7 @@
 
 .contact-page__company-coordinates {
     @extend %contact-page__company-name_font;
-
+    margin-bottom: 3rem;
 
 }
 
@@ -53,7 +53,7 @@
     color: #333;
     line-height: normal;
 
-    margin-bottom: 20px;
+
 }
 
 .contact_us__button {
@@ -67,8 +67,8 @@
     text-decoration: none;
     background-color: $secondary-color;
     @extend %button-text-white_font;
-    margin-top: 10px;
-    margin-bottom: 100px;
+
+    margin-bottom: 8rem;
 
 }
 
@@ -84,8 +84,8 @@
 
 .contact-page__map>iframe {
     margin-top: 65px;
-    width: 40em;
-    height: 40em;
+    width: 50rem;
+    height: 31em;
     max-width: 100%;
 
 }
